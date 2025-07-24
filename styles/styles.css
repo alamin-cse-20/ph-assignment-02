@@ -83,7 +83,6 @@
 .plants p{
     font-size: 22px;
     font-weight: 400px;
-
     color: rgba(0, 0, 0, 0.5);
     text-align: center;
 }
@@ -93,7 +92,6 @@
     grid-template-columns: repeat(4, 1fr);
     gap: 20px;
     grid-area: 30px;
-    padding: 0 20px;
 }
 .card {
     border-radius: 10px;
@@ -135,3 +133,17 @@
 }
 
 /* plants and flower lovers section styles */
+.lover{
+    display: flex;
+    justify-content: space-between;
+}
+.lover-left{
+    width: 540px;
+    height: 600px;
+    border: 1px solid green;
+}
+.lover-right{
+    width: 540px;
+    height: 600px;
+    border: 1px solid red;
+}
