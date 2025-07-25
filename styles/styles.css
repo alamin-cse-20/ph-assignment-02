@@ -1,179 +1,342 @@
-/* Common CSS */
-*{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+* {
+margin: 0;
+padding: 0;
+}
+/* shared styles */
+.flex {
+display: flex;
+}
+.dark-1 {
+color: rgba(37, 36, 50, 1);
+}
+.light-1 {
+color: rgba(137, 135, 161, 1);
+}
+.dark-2 {
+color: #000000;
+}
+.orange {
+color: rgba(233, 90, 8, 1);
+}
+.light-dark-5 {
+color: rgba(0, 0, 0, 0.5);
+}
+.white {
+color: white;
+}
+.primary-btn {
+background-color: rgba(233, 90, 8, 1);
+width: 100%;
+border: none;
+height: 3.1rem;
 }
 
-.container{
-    max-width: 1140px;
-    margin: 0 auto;
-    /* background-color: #F5F8FF; */
+/* header section styles */
+.navbar {
+justify-content: space-between;
+align-items: center;
+max-width: 1140px;
+margin: 0 auto;
+}
+.basic-menu li a {
+text-decoration: none;
+}
+.basic-menu li {
+list-style: none;
+margin-right: 3rem;
+}
+.cart-btn a {
+text-decoration: none;
+}
+.intro-banner {
+justify-content: space-between;
+margin: 120px auto;
+max-width: 1140px;
+align-items: end;
+}
+.intro-title,
+.intro-desc {
+margin-bottom: 0.8rem;
+}
+.intro-title {
+font-size: 4rem;
+font-weight: bold;
+}
+.intro-desc {
+font-size: 1.3rem;
+}
+.hero-img {
+width: 100%;
 }
 
-
-/* nav bar */
-.nav{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    /* background-color: green */
-    margin-top: 30px;
-    margin-bottom: 120px;
-    height: 70px;
+/* Plants buy section */
+.plants-section-title {
+font-size: 3.1rem;
+font-weight: bold;
 }
-.nav img{
-    width: 135px;
-    height: 70px;
+.plants-section {
+text-align: center;
+max-width: 1140px;
+margin: 0 auto;
 }
-.nav-items{
-    display: flex;
-    gap: 10px;
+.plants-buy-cards {
+display: grid;
+grid-template-columns: repeat(4, 1fr);
+gap: 20px;
 }
-.nav-items li{
-    list-style: none;
-}
-.nav-items a{
-    text-decoration: none;
-    color: black;
-}
-/* hero section */
-.hero{
-    display: flex;
-    /* border: 1px solid red; */
-}
-.hero-left{
-    width: 50%;
-    /* border: 1px solid green; */
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-end;
-}
-.hero-left h1{
-    font-size: 65px;
-    font-weight: 650px;
-    margin-bottom: 30px;
-}
-.colored-text{
-    color: #E95A08;
-}
-.hero-left p{
-    font-size: 22px;
-    font-weight: 400px;
-    color: rgba(0, 0, 0, 0.5);
-}
-.hero-right{
-    width: 50%;
-    /* border: 1px solid blue; */
-    display: flex;
-    justify-content: flex-end;
-    align-items: flex-end;
+.plants-section-title,
+.plants-section-desc {
+margin-bottom: 35px;
 }
 
-/* plants section styles */
-.plants{
-    margin-top: 120px;
+.card-img,
+.plant-name,
+.plant-price {
+margin-bottom: 20px;
 }
-.plants h1{
-    font-size: 50px;
-    font-weight: 700px;
-    text-align: center;
-}
-.plants p{
-    font-size: 22px;
-    font-weight: 400px;
-    color: rgba(0, 0, 0, 0.5);
-    text-align: center;
-}
-.cards{
-    margin-top: 50px;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 20px;
-    grid-area: 30px;
-}
-.card {
-    border-radius: 10px;
-    overflow: hidden;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
-    display: flex;
-    flex-direction: column;
-}
-.card img{
-    width: 100%;
-    height: 323px;
-    border: 100px;
-    object-fit: cover;
-    border-radius: 10px 10px 0 0;
-}
-.card p{
-    font-size: 22px;
-    font-weight: 400;
-    color: #111111;
-}
-.card h3{
-    font-size: 22px;
-    font-weight: 700;
-    color: #111111;
-    text-align: center;
+.card-img {
+width: 100%;
 }
 
-.btn{
-    background-color: #E95A08;
-    color: white;
-    width: 100%;
-    height: 50px;
-    margin-top: 10px;
-    font-size: 16px;
-    font-weight: 600;
-    border: none;
-    margin-bottom: 20px;
+/* flower-plant-lover-section */
+.flower-plant-lover-section {
+justify-content: space-between;
+max-width: 1140px;
+margin: 40px auto;
+gap: 40px;
+padding: 40px 20px;
+}
+.flower-store {
+position: relative;
+width: 45%;
 }
 
-/* plants and flower lovers section styles */
-.lover{
-    margin-top: 120px;
-    display: flex;
-    justify-content: space-between;
+.badge {
+position: absolute;
+top: -90px;
+right: -100px;
+max-width: 220px;
 }
-.lover-left{
-    width: 540px;
-    height: 600px;
-    /* border: 1px solid green; */
+
+.flower-store img {
+width: 100%;
 }
-.lover-right{
-    width: 540px;
-    height: 600px;
-    /* border: 1px solid red; */
-    padding: 60px 0;
-    box-sizing: border-box; 
-    padding: 20px;
+.flower-plant-lover-section-desc {
+width: 45%;
+margin-top: 40px;
 }
-.lover-right h1{
-    font-size: 50px;
-    font-weight: 700;
+
+.plant-lover-section-title {
+font-size: 3rem;
+font-weight: bold;
 }
-.lover-right li{
-    margin: 20px 0;
-    font-size: 22px;
-    font-weight: 400px;
-    color: rgba(0, 0, 0, 0.5);
-    text-align: left;
-    word-wrap: break-word; 
-    overflow-wrap: break-word;
-    padding: 10px 20px;
+.lover-desc {
+padding-left: 30px;
+font-size: 1.2rem;
 }
-/* Deals section styles */
-.deals h1{
-    font-size: 50px;
-    font-weight: 700px;
-    text-align: center;
+.lover-desc li {
+margin-top: 3rem;
 }
-.deals p{
-    font-size: 22px;
-    font-weight: 400px;
-    color: rgba(0, 0, 0, 0.5);
-    text-align: center;
+
+/* latest-deal-section */
+.latest-deal-section {
+text-align: center;
+max-width: 1140px;
+margin: 0 auto;
+}
+.latest-deal-title {
+font-size: 3.1rem;
+font-weight: bold;
+}
+.latest-deal-desc {
+font-size: 1.2rem;
+}
+.latest-deal-title,
+.latest-deal-desc {
+margin-bottom: 30px;
+}
+
+.promo-container {
+max-width: 1140px;
+margin: 40px auto;
+gap: 20px;
+padding: 0 20px;
+}
+
+.left-column {
+width: 33.33%;
+flex-direction: column;
+gap: 20px;
+}
+
+.promo-card,
+.right-column {
+position: relative;
+background-size: cover;
+background-position: center;
+border-radius: 14px;
+height: 200px;
+color: white;
+align-items: center;
+justify-content: center;
+}
+
+.right-column {
+width: 66.66%;
+height: 100%;
+min-height: 420px;
+}
+
+.promo-text {
+text-align: center;
+padding: 20px;
+border-radius: 10px;
+}
+
+.promo-text h2,
+.promo-text h3 {
+margin: 0;
+font-weight: bold;
+}
+
+.promo-text a {
+margin-top: 10px;
+display: inline-block;
+color: white;
+font-weight: bold;
+border-radius: 2px solid white;
+}
+
+/* join section */
+.join-section {
+background-image: url("../assets/news-letter-bg.png");
+background-size: cover;
+width: 100%;
+height: 535px;
+text-align: center;
+align-content: center;
+}
+.join-title {
+font-size: 3.1rem;
+margin-bottom: 30px;
+font-weight: bold;
+}
+.input-button {
+justify-content: center;
+align-items: center;
+}
+.input-button .email {
+height: 3.1rem;
+width: 45%;
+padding-left: 50px;
+}
+.input-button input[type="submit"] {
+height: 3.3rem;
+background-color: rgba(233, 90, 8, 1);
+border: none;
+width: 25%;
+font-size: 1rem;
+}
+
+.input-button input:focus {
+outline: none;
+border: none;
+}
+
+/* footer section style */
+.important-links {
+justify-content: space-between;
+align-items: center;
+max-width: 1140px;
+margin: 80px auto;
+}
+
+.page-links {
+display: grid;
+grid-template-columns: repeat(2, 1fr);
+width: 33.33%;
+gap: 1.5rem;
+}
+
+.page-links a {
+text-decoration: none;
+color: rgba(0, 0, 0, 0.5);
+}
+
+.footer-desc {
+font-size: 1.2rem;
+}
+
+.footer-logo-desc {
+width: 33.33%;
+}
+
+.social-link {
+justify-content: space-around;
+align-items: center;
+width: 33.33%;
+}
+/* Responsive Styles for mobile Device */
+@media screen and (max-width: 576px) {
+.navbar {
+padding: 0 20px;
+}
+.intro-banner {
+flex-direction: column-reverse;
+}
+.nav-logo img {
+width: 50%;
+}
+.intro-info {
+margin-top: 50px;
+}
+.intro-title {
+font-size: 2.4rem;
+font-weight: bold;
+}
+.intro-desc {
+font-size: 1rem;
+}
+.basic-menu {
+display: none;
+}
+.plants-buy-cards {
+grid-template-columns: repeat(2, 1fr);
+gap: 10px;
+}
+.flower-plant-lover-section {
+flex-direction: column;
+}
+.badge {
+display: none;
+}
+.plant-lover-section-title {
+font-size: 2.5rem;
+}
+.flower-store,
+.flower-plant-lover-section-desc {
+width: 100%;
+}
+.promo-container {
+flex-direction: column;
+}
+.left-column,
+.right-column {
+width: 100%;
+}
+.right-column {
+min-height: 200px;
+}
+.important-links {
+flex-direction: column;
+}
+.page-links {
+grid-template-columns: 1fr;
+}
+.footer-logo-desc,
+.social-link,
+.page-links {
+width: 80%;
+margin-bottom: 50px;
+}
 }
