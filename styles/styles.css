@@ -134,16 +134,46 @@
 
 /* plants and flower lovers section styles */
 .lover{
+    margin-top: 120px;
     display: flex;
     justify-content: space-between;
 }
 .lover-left{
     width: 540px;
     height: 600px;
-    border: 1px solid green;
+    /* border: 1px solid green; */
 }
 .lover-right{
     width: 540px;
     height: 600px;
-    border: 1px solid red;
+    /* border: 1px solid red; */
+    padding: 60px 0;
+    box-sizing: border-box; 
+    padding: 20px;
+}
+.lover-right h1{
+    font-size: 50px;
+    font-weight: 700;
+}
+.lover-right li{
+    margin: 20px 0;
+    font-size: 22px;
+    font-weight: 400px;
+    color: rgba(0, 0, 0, 0.5);
+    text-align: left;
+    word-wrap: break-word; 
+    overflow-wrap: break-word;
+    padding: 10px 20px;
+}
+/* Deals section styles */
+.deals h1{
+    font-size: 50px;
+    font-weight: 700px;
+    text-align: center;
+}
+.deals p{
+    font-size: 22px;
+    font-weight: 400px;
+    color: rgba(0, 0, 0, 0.5);
+    text-align: center;
 }
